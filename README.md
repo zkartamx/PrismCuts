@@ -2,6 +2,13 @@
 
 Este proyecto segmenta automáticamente un video en escenas usando el modelo `VideoPrism` de Google, basado en la similitud semántica entre embeddings.
 
+# 🎬 Video Scene Splitter with VideoPrism
+
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zkartamx/PrismCuts/blob/main/notebooks/VideoSceneSplitter_Colab_FIXED.ipynb)
+
+Este proyecto segmenta automáticamente un video en escenas usando el modelo `VideoPrism` de Google, basado en la similitud semántica entre embeddings.
+
+
 ## 🚀 Cómo usar
 
 ### 1. Clona el repositorio y entra al proyecto
@@ -42,3 +49,5 @@ python main.py --input videos/mi_video.mp4 --output outputs/ --clip-seconds 1.0 
 ## 🛠 Créditos
 
 Basado en el modelo open-source [VideoPrism de Google](https://huggingface.co/google/videoprism).
+
+
