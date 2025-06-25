@@ -4,3 +4,5 @@ ffmpeg-python
 scikit-learn
 numpy
 opencv-python
+Pillow
+gradio

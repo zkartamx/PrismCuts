@@ -1,5 +1,5 @@
 import argparse
-from transformers import AutoProcessor, AutoModel
+from transformers import VideoMAEFeatureExtractor, VideoMAEModel
 from src.extract_embeddings import get_video_clips, extract_embeddings
 from src.detect_scenes import detect_scene_changes
 from src.split_video import split_video
@@ -15,8 +15,8 @@ def main():
     args = parser.parse_args()
 
     print("[INFO] Cargando modelo VideoPrism...")
-    processor = AutoProcessor.from_pretrained("google/videoprism")
-    model = AutoModel.from_pretrained("google/videoprism")
+    processor = VideoMAEFeatureExtractor.from_pretrained("MCG-NJU/videomae-base")
+    model = VideoMAEModel.from_pretrained("MCG-NJU/videomae-base")
 
     print("[INFO] Extrayendo clips del video...")
     clips = get_video_clips(args.input, args.clip_seconds)
